@@ -42,6 +42,7 @@ Google Colab is a free cloud service that supports Python programming and provid
 
 **Result: loss: 0.8103 - Accuracy: 0.6546**
 
+
 **************************************
 # Optimization with Keras Tuner
 **************************************
@@ -75,6 +76,15 @@ The optimized model used Keras Tuner to dynamically determine the best architect
 
 
 **Result: Test Loss: 0.5692663192749023, Test Accuracy: 0.7203498482704163**
+
+
+
+# In summary:
+Using Keras Tune, improved the accuracy a lot (about 7%, from 0.65 to 0.727) but still less than 75% we used other ways trying to increase the accuracy but got lower accuracy.
+Through iterative model development, including hyperparameter tuning and the incorporation of regularization techniques, the project showcased the potential of deep learning in predicting the success of charity funding applications. 
+
+
+
 **************************************
 # An overview of important concepts in NN models:
 **************************************
