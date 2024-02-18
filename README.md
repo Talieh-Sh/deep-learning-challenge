@@ -4,6 +4,18 @@
 ## Project Overview
 This project aims to help Alphabet Soup charity identify applications likely to be successful if funded. It offers a Neural Network model that uses data from past applications and predicts if the application would be successful if funded or not.
 
+
+## Google Colab
+To facilitate the development, training, and evaluation of our neural network model, we utilized Google Colab. 
+Google Colab is a free cloud service that supports Python programming and provides a robust environment for machine learning and data analysis projects.
+
+### Advantages of Using Google Colab
+- Pre-installed Libraries
+- High-Performance Computing: Access to free GPU and TPU resources in Colab.
+- No Local Setup Required
+- Collaboration
+
+  
 ## Dependencies
 - TensorFlow
 - Scikit-learn
@@ -22,9 +34,8 @@ This project aims to help Alphabet Soup charity identify applications likely to 
 - **Compilation:** Adam optimizer, binary crossentropy loss function.
 
 ## Training and Evaluation
-Split: The data is split into training and testing sets.
-Scaling: Data is normalized using StandardScaler.
-Evaluation: Model's performance is evaluated using accuracy.
+- **Split:** The data is split into training and testing sets.
+- **Evaluation:** The Model's performance is evaluated using accuracy.
 
 ## Export
-The model is saved as an HDF5 file, AlphabetSoupCharity.h5, for future use.
+- The model is saved as an HDF5 file, AlphabetSoupCharity.h5, for future use.
