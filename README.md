@@ -40,11 +40,13 @@ Google Colab is a free cloud service that supports Python programming and provid
 ## Export
 - The model is saved as an HDF5 file, AlphabetSoupCharity.h5, for future use.
 
-**Result: loss: 0.8103 - accuracy: 0.6546**
+**Result: loss: 0.8103 - Accuracy: 0.6546**
+
 **************************************
 # Optimization with Keras Tuner
 **************************************
-In the AlphabetSoupCharity_Optimisation model (AlphabetSoupCharity_Optimisation.ipynb):
+- AlphabetSoupCharity_Optimisation.ipynb
+- In the AlphabetSoupCharity_Optimisation model :
 We used the Keras Tuner library to improve the accuracy of the model. Keras Tuner is used to automate the hyperparameter tuning process.
 ## Dynamic Architecture with Hyperparameter Tuning: 
 The optimized model used Keras Tuner to dynamically determine the best architecture and hyperparameters.
@@ -57,9 +59,9 @@ The optimized model used Keras Tuner to dynamically determine the best architect
 **************************************
 # Changing cutoff limits
 **************************************
-AlphabetSoupCharity_Optimisation_2.ipynb 
-Changing the cutoff limit for Application Type from 500 to 1000 (from 9 bins to 6 bins) 
-Changing the cutoff limit for Classification Type from 1000 to 2000 (from 6 bins to 4 bins) 
+- AlphabetSoupCharity_Optimisation_2.ipynb 
+- Changing the cutoff limit for Application Type from 500 to 1000 (from 9 bins to 6 bins) 
+- Changing the cutoff limit for Classification Type from 1000 to 2000 (from 6 bins to 4 bins) 
 
 **Result: Loss: 0.5639263987541199, Accuracy: 0.7248979806900024** 
 
@@ -68,7 +70,8 @@ Changing the cutoff limit for Classification Type from 1000 to 2000 (from 6 bins
 **************************************
 # Using Dropout and L2 Regularization
 **************************************
-incorporating comprehensive hyperparameter tuning that includes regularization parameters and employing strategies to combat overfitting, such as dropout and L2 regularization. The expanded search space for hyperparameters and the inclusion of early stopping suggest a model designed for enhanced performance and generalization. 
+- AlphabetSoupCharity_Optimisation_3.ipynb 
+- incorporating comprehensive hyperparameter tuning that includes regularization parameters and employing strategies to combat overfitting, such as dropout and L2 regularization. The expanded search space for hyperparameters and the inclusion of early stopping suggest a model designed for enhanced performance and generalization. 
 
 
 **Result: Test Loss: 0.5692663192749023, Test Accuracy: 0.7203498482704163**
