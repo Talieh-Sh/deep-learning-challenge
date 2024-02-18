@@ -2,7 +2,7 @@
 ## Alphabet Soup Charity Success Prediction
 
 ## Project Overview
-The purpose of this project is to help Alphabet Soup charity to identify applications likely to be successful if funded. It is offering a Neural Network model that uses data from past applications and predicts if the application would be successfull if funded or not.
+This project aims to help Alphabet Soup charity identify applications likely to be successful if funded. It offers a Neural Network model that uses data from past applications and predicts if the application would be successful if funded or not.
 
 ## Dependencies
 - TensorFlow
@@ -12,15 +12,14 @@ The purpose of this project is to help Alphabet Soup charity to identify applica
 
 
 ## Data Preprocessing
-Target Variable: IS_SUCCESSFUL
-Features: All columns except EIN and NAME
-Encoding: Categorical variables are encoded into numeric values.
-Scaling: Feature variables are scaled.
+- **Target Variable:** IS_SUCCESSFUL
+- **Features:** All columns except EIN and NAME (APPLICATION_TYPE,	AFFILIATION,	CLASSIFICATION,	USE_CASE,	ORGANIZATION,	STATUS,	INCOME_AMT,	SPECIAL_CONSIDERATIONS, ASK_AMT)
+- **Encoding:** Categorical variables are encoded into numeric values. using: pd.get_dummies
 
 ## Model
-Architecture: Sequential model with two hidden layers.
-Activation: ReLU for hidden layers, Sigmoid for output layer.
-Compilation: Adam optimizer, binary crossentropy loss function.
+- **Architecture:** Sequential model with hidden layers.
+- **Activation:** ReLU, Sigmoid, ...  for hidden layers and output layer.
+- **Compilation:** Adam optimizer, binary crossentropy loss function.
 
 ## Training and Evaluation
 Split: The data is split into training and testing sets.
