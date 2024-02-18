@@ -40,11 +40,11 @@ Google Colab is a free cloud service that supports Python programming and provid
 ## Export
 - The model is saved as an HDF5 file, AlphabetSoupCharity.h5, for future use.
 
-
+**Result: loss: 0.8103 - accuracy: 0.6546**
 **************************************
 # Optimization with Keras Tuner
 **************************************
-In the AlphabetSoupCharity_Optimisation model:
+In the AlphabetSoupCharity_Optimisation model (AlphabetSoupCharity_Optimisation.ipynb):
 We used the Keras Tuner library to improve the accuracy of the model. Keras Tuner is used to automate the hyperparameter tuning process.
 ## Dynamic Architecture with Hyperparameter Tuning: 
 The optimized model used Keras Tuner to dynamically determine the best architecture and hyperparameters.
@@ -52,10 +52,26 @@ The optimized model used Keras Tuner to dynamically determine the best architect
 - **Neurons in Layers:** The number of neurons in the first layer and subsequent hidden layers was not fixed but chosen from a range (1 to 30, with step increments of 5) by Keras Tuner.
 - **Number of Hidden Layers:** Keras Tuner decided on the number of hidden layers (between 1 and 6), allowing the model to explore various depths.
 
+**Result: Loss: 0.5593386888504028, Accuracy: 0.7271137237548828** 
+
+**************************************
+# Changing cutoff limits
+**************************************
+AlphabetSoupCharity_Optimisation_2.ipynb 
+Changing the cutoff limit for Application Type from 500 to 1000 (from 9 bins to 6 bins) 
+Changing the cutoff limit for Classification Type from 1000 to 2000 (from 6 bins to 4 bins) 
+
+**Result: Loss: 0.5639263987541199, Accuracy: 0.7248979806900024** 
 
 
 
+**************************************
+# Using Dropout and L2 Regularization
+**************************************
+incorporating comprehensive hyperparameter tuning that includes regularization parameters and employing strategies to combat overfitting, such as dropout and L2 regularization. The expanded search space for hyperparameters and the inclusion of early stopping suggest a model designed for enhanced performance and generalization. 
 
+
+**Result: Test Loss: 0.5692663192749023, Test Accuracy: 0.7203498482704163**
 **************************************
 # An overview of important concepts in NN models:
 **************************************
